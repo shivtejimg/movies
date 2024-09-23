@@ -90,7 +90,7 @@ useEffect(() => {
                     {
                         popularStar.map((item, index)=>{
                             return (
-                                <SwiperSlide className=''> 
+                                <SwiperSlide className='' key={index}> 
                                     <div className="relative rounded-xl overflow-hidden">
                                     <img src={IMG_URL+item.poster_path} className="object-cover h-full w-full -z-10" alt="Leonardo DiCaprio" />
                                     <div className="absolute top-0 h-full w-full bg-gradient-to-t from-black/50 p-3 flex flex-col justify-between">
